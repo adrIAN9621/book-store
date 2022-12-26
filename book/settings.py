@@ -21,12 +21,17 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'users.apps.UsersConfig',    
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'store',
+    'basket',
+    'account'
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -53,7 +58,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'store.views.categories'
+                'store.views.categories',
+                'basket.context.basket',
+                
+
             ],
         },
     },

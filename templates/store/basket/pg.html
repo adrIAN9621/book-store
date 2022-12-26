@@ -1,0 +1,21 @@
+{% extends "../base.html" %}
+{% block content %}
+<table class="table table-hover">
+    <thead>
+      <tr> 
+        <th>Cart ID</th>
+        <th>Cart Items</th>
+        <th>Book Title</th>
+        <th>Product Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ object.cart }}</td>
+        <td>{{ object.product }}</td>                      
+        <td>{{ object.product.baker }}</td>   
+        <td>{{ object.product.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}

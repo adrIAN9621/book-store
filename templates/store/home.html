@@ -1,6 +1,6 @@
 {% extends "./base.html" %}
 {% load static %}
-{% block title %}Home{% endblock %}
+{% block title %}BookShop{% endblock %}
 {% block content %}
 
 
@@ -9,10 +9,11 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="h1 fw-bold">Search, Buy, Read, Review</h1>
+        <h1 class="h1 fw-bold">Search, Buy, Read</h1>
         <p class="lead text-muted">Life is a succession of lessons which must be lived to be understood.</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Make an account</a>
+          <a href="{% url "users:login"%}" class="btn btn-primary my-2">Make an account / Login</a>
+        
         </p>
       </div>
     </div>

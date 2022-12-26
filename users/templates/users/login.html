@@ -1,0 +1,47 @@
+
+{% extends 'C:\Users\adivl\Desktop\book\templates\store\base.html' %}
+
+{% block title %}
+<title>Login</title>
+{% endblock %}
+
+{% block content %}
+
+<body>
+    <html>
+<head>
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+<body>
+
+</body>
+</html>
+    
+    <div class="container center_div">
+        <form method="post" action="{% url 'users:login' %}">
+            {% csrf_token %}
+            <div>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                <h2>Log In</h2>
+                <label>     E-mail</label>
+                <input type="text" bold name="username" />
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" bold name="password" />
+            </div>
+            <input type="submit" value="Login" />
+            <div>
+            </div>
+
+            <div> <a type= button class="btn btn-outline-secondary" href="{% url "account:account"%}",  background color=gray href="">I dont have an account</a> </div>
+            
+        </form>
+
+    </div>
+</body>
+{% endblock %}
